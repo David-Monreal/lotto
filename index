@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header .logo img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    height: 60px;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #343a40;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    flex: 1;
+}
+
+nav a:hover {
+    background-color: #007bff;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('lotto-banner.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Content Styles */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content h2 {
+    color: #007bff;
+}
+
+.video-container {
+    margin: 20px auto;
+    max-width: 560px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    header .logo img {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        font-size: 1.5em;
+    }
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRS Philippines Official</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://i.ibb.co/jzQp77J/logo.png" alt="LRS Philippines Official Logo">
+        </div>
+        <h1>LRS Philippines Official</h1>
+        <p>Your trusted partner in lottery betting</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#how-to-play">How to Play</a>
+        <a href="#results">Results</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h2>Welcome to LRS Philippines Official</h2>
+    </div>
+
+    <div class="content" id="home">
+        <h2>About Us</h2>
+        <p>Welcome to LRS Philippines Official, your trusted platform for lottery betting. We provide an easy and secure way to bet on the latest lotto results. Join us and be part of the winning experience.</p>
+    </div>
+
+    <div class="content" id="how-to-play">
+        <h2>How to Play</h2>
+        <p>Betting with us is simple! Choose your numbers, place your bet, and wait for the results. We offer various betting options to increase your chances of winning.</p>
+        <!-- Embedded YouTube Video -->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8ywjjzq_sW4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="content" id="results">
+        <h2>Latest Results</h2>
+        <div id="lotto-results">
+            <img src="https://www.facebook.com/photo/?fbid=122105235890495511&set=a.122101563842495511" alt="Latest Lotto Results">
+        </div>
+    </div>
+
+    <div class="content" id="contact">
+        <h2>Contact Us</h2>
+        <p>Got questions? Reach out to us at <a href="mailto:support@lrsphilippines.com">support@lrsphilippines.com</a> or call us at (123) 456-7890.</p>
+        <p>You can also message us directly on Facebook:</p>
+        <a href="https://web.facebook.com/profile.php?id=100069777804120" class="fb-messenger-link" target="_blank">Message us on Facebook Messenger</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LRS Philippines Official. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
