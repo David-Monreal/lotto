@@ -17,14 +17,18 @@
             overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
+        header, nav, footer {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
         header {
             background-color: #003366;
             color: white;
             padding: 10px 0;
-            text-align: center;
-            position: sticky;
             top: 0;
-            z-index: 1000; /* Ensure header is on top of other content */
+            text-align: center;
         }
 
         .logo {
@@ -35,9 +39,7 @@
         nav {
             background-color: #0059b3;
             padding: 10px;
-            position: sticky;
             top: 60px; /* Adjust this based on the header height */
-            z-index: 999; /* Ensure navigation is below the header */
         }
 
         nav ul {
@@ -71,14 +73,12 @@
             color: white;
             text-align: center;
             padding: 10px;
-            position: sticky;
             bottom: 0;
-            width: 100%;
         }
 
         /* Section Styles */
         section {
-            padding: 20px;
+            padding: 80px 20px 20px; /* Add padding to account for fixed header/nav */
             background-color: white;
             margin-bottom: 20px;
         }
@@ -133,17 +133,30 @@
         #results table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
         }
 
         #results th, #results td {
             border: 1px solid #ddd;
-            padding: 8px;
+            padding: 12px 15px;
             text-align: center;
         }
 
         #results th {
             background-color: #0059b3;
             color: white;
+            font-weight: bold;
+        }
+
+        #results tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #results tr:hover {
+            background-color: #e0e0e0;
         }
 
         /* Winners Gallery */
@@ -205,7 +218,7 @@
 <body>
     <!-- Header Section -->
     <header>
-        <img src="lotto/img/lrs.png" alt="LRS Philippines Logo" class="logo">
+        <img src="img/lrs.png" alt="LRS Philippines Logo" class="logo">
         <h1>Welcome to LRS Philippines Official</h1>
     </header>
 
@@ -226,7 +239,7 @@
         <div class="container">
             <h2>Welcome to LRS Philippines Official</h2>
             <p>Your trusted source for lotto games and fun betting experiences. We offer a wide range of exciting lottery games like 6/45, 6/49, 6/55, 6/58, 2D Lotto, and 3D Lotto. Join us for a chance to win big and experience the thrill of the lottery!</p>
-            <iframe src="https://www.youtube.com/embed/your_video_id" title="YouTube video player"></iframe>
+            <iframe src="https://www.youtube.com/watch?v=y5VfH2LTGX8" title="YouTube video player"></iframe>
         </div>
     </section>
 
@@ -239,7 +252,7 @@
         </div>
     </section>
 
-                <!-- Games Section -->
+    <!-- Games Section -->
     <section id="games">
         <div class="container">
             <h2>Our Games</h2>
@@ -261,33 +274,30 @@
                 <img src="path_to_6_55_image.jpg" alt="6/55 Grand Lotto" class="game-image">
                 <h3 class="game-title">6/55 Grand Lotto</h3>
                 <div class="game-details hidden">
-                    <p>Experience the grand thrill! Select 3 numbers from 1 to 55. If all three numbers appear among the six drawn numbers, you win the grand prize! Even with just two matches, a return bet is yours. Get in the game and aim for the grand prize!</p>
+                    <p>Experience the grand thrill! Select 3 numbers from 1 to 55. If all three numbers appear among the six drawn numbers, you win the grand prize! Even with just two matches, a return bet is yours. Try your luck with the Grand Lotto today!</p>
                 </div>
             </article>
             <article>
                 <img src="path_to_6_58_image.jpg" alt="6/58 Ultra Lotto" class="game-image">
                 <h3 class="game-title">6/58 Ultra Lotto</h3>
                 <div class="game-details hidden">
-                    <p>Go ultra with your picks! Choose 3 numbers from 1 to 58. Match all three numbers with the drawn six and win the jackpot instantly. Two matches? You still get a return bet. Don’t miss out on your chance for an ultra win!</p>
+                    <p>Go ultra with your picks! Choose 3 numbers from 1 to 58. All three matching the six drawn numbers means you win big! If two numbers match, you receive a return bet. The Ultra Lotto offers high stakes and exciting rewards. Play now and be a winner!</p>
                 </div>
             </article>
             <article>
                 <img src="path_to_2d_lotto_image.jpg" alt="2D Lotto" class="game-image">
                 <h3 class="game-title">2D Lotto</h3>
                 <div class="game-details hidden">
-                    <p>Pick 2 numbers from 1 to 31 and choose your play type. Use 'S' for straight (exact order), 'R' for rumble (any order), or 'P' for pompi (same number). Match the drawn numbers and win—simple and fun!</p>
+                    <p>Pick 2 numbers from 1 to 31. You can choose to play straight (S), rumble (R), or pompi (P). Straight wins require exact order, while rumble is any order, and pompi means the same number. It's a quick and fun game with great chances of winning!</p>
                 </div>
             </article>
             <article>
                 <img src="path_to_3d_lotto_image.jpg" alt="3D Lotto" class="game-image">
                 <h3 class="game-title">3D Lotto</h3>
                 <div class="game-details hidden">
-                    <p>Select 3 numbers from 0 to 9 and specify your play type. Use 'S' for straight (exact order), 'R' for rumble (any order), or 'T' for trio (same numbers). Match all three numbers to win. It’s easy to play and exciting to win!</p>
+                    <p>Choose 3 numbers from 0 to 9. Play straight (S) for exact order, rumble (R) for any order, or trio (T) for same numbers. It's a dynamic game with multiple ways to win. Try your luck and see if you can claim a prize!</p>
                 </div>
             </article>
-        </div>
-    </section>
-            <!-- Your existing game articles go here -->
         </div>
     </section>
 
@@ -339,6 +349,8 @@
                         <td>6/49 Super Lotto</td>
                         <td>01 - 02 - 03 - 04 - 05 -06</td>
                     </tr>
+
+
             <table>
                 <thead>
                     <tr>
@@ -480,37 +492,40 @@
         </div>
     </section>
 
-    <!-- Winners Section -->
-    <section id="winners">
-        <div class="container">
-            <h2>Our Winners</h2>
-            <div class="gallery">
-                <img src="img/sep1.png" alt="SEPTEMBER 1">
-                <img src="img/sep2.png" alt="SEPTEMBER 2">
-                <img src="img/sep3.png" alt="SEPTEMBER 3">
-                <img src="img/sep4.png" alt="SEPTEMBER 4">
-                <img src="img/sep5.png" alt="SEPTEMBER 5">
-                <!-- Add more images as needed -->
-            </div>
+<!-- Winners Section -->
+<section id="winners">
+    <div class="container">
+        <h2>Winners</h2>
+        <div class="gallery">
+            <img src="path_to_winner1.jpg" alt="Winner 1">
+            <img src="path_to_winner2.jpg" alt="Winner 2">
+            <img src="path_to_winner3.jpg" alt="Winner 3">
+            <!-- More images as needed -->
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 LRS Philippines Official. All rights reserved.</p>
-    </footer>
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 LRS Philippines Official. All rights reserved.</p>
+</footer>
 
-    <!-- Combined JavaScript -->
-    <script>
-        // Toggle navigation for mobile view
+<!-- JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const gameTitles = document.querySelectorAll('.game-title');
+        gameTitles.forEach(title => {
+            title.addEventListener('click', function() {
+                const details = this.nextElementSibling;
+                details.classList.toggle('hidden');
+            });
+        });
+
         const navToggle = document.querySelector('.nav-toggle');
         const navMenu = document.querySelector('nav ul');
-
         navToggle.addEventListener('click', function() {
             navMenu.classList.toggle('active');
         });
-
-        // Toggle game details
-        const gameTitles = document.querySelectorAll('.game-title');
-
-        game
+    });
+</script>
+</body> </html> ```
