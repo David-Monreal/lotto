@@ -117,6 +117,37 @@
             display: none;
         }
 
+        /* Results Table */
+        #results table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #results th, #results td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        #results th {
+            background-color: #0059b3;
+            color: white;
+        }
+
+        /* Winners Gallery */
+        #winners .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        #winners .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
         /* Responsive Styles */
         @media (max-width: 768px) {
             nav ul {
@@ -150,24 +181,11 @@
             margin-bottom: 15px;
         }
 
-        /* Embed Styles */
-        .embed-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            background: #000;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-
-        .embed-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+        /* Video Embed */
+        #home iframe {
             width: 100%;
-            height: 100%;
+            height: 315px;
+            border: none;
         }
     </style>
 </head>
@@ -187,7 +205,6 @@
             <li><a href="#games">Games</a></li>
             <li><a href="#results">Results</a></li>
             <li><a href="#winners">Winners</a></li>
-            <li><a href="#live-draws">Live Draws</a></li>
         </ul>
     </nav>
 
@@ -196,6 +213,7 @@
         <div class="container">
             <h2>Welcome to LRS Philippines Official</h2>
             <p>Your trusted source for lotto games and fun betting experiences. We offer a wide range of exciting lottery games like 6/45, 6/49, 6/55, 6/58, 2D Lotto, and 3D Lotto. Join us for a chance to win big and experience the thrill of the lottery!</p>
+            <iframe src="https://www.youtube.com/watch?v=y5VfH2LTGX8" title="YouTube video player"></iframe>
         </div>
     </section>
 
@@ -212,43 +230,76 @@
     <section id="games">
         <div class="container">
             <h2>Our Games</h2>
-            <article>
-                <img src="path_to_6_45_image.jpg" alt="6/45 Mega Lotto" class="game-image">
-                <h3 class="game-title">6/45 Mega Lotto</h3>
-                <div class="game-details hidden">
-                    <p>Ready for a mega win? Choose 3 numbers from 1 to 45 and wait for the draw! If all three of your numbers match the six drawn numbers, you win instantly. Even if only two numbers match, you get a return bet. Exciting, right? Join now and try your luck!</p>
-                </div>
-            </article>
-            <article>
-                <img src="path_to_6_49_image.jpg" alt="6/49 Super Lotto" class="game-image">
-                <h3 class="game-title">6/49 Super Lotto</h3>
-                <div class="game-details hidden">
-                    <p>Dreaming of a super win? Pick 3 numbers from 1 to 49. Match all three with the six drawn numbers, and you're a winner! Just two matching numbers still earn you a return bet. It's your chance to hit it big—play now and see if you’re lucky!</p>
-                </div>
-            </article>
-            <article>
-                <img src="path_to_6_55_image.jpg" alt="6/55 Grand Lotto" class="game-image">
-                <h3 class="game-title">6/55 Grand Lotto</h3>
-                <div class="game-details hidden">
-                    <p>Experience the grand thrill! Select 3 numbers from 1 to 55. If all three numbers appear among the six drawn numbers, you win the grand prize! Even with just two matches, a return bet is yours. Get in the game and aim for the grand prize!</p>
-                </div>
-            </article>
-            <article>
-                <img src="path_to_6_58_image.jpg" alt="6/58 Ultra Lotto" class="game-image">
-                <h3 class="game-title">6/58 Ultra Lotto</h3>
-                <div class="game-details hidden">
-                    <p>Go ultra with your picks! Choose 3 numbers from 1 to 58. Match all three numbers with the drawn six and win the jackpot instantly. Two matches? You still get a return bet. Don’t miss out on your chance for an ultra win!</p>
-                </div>
-            </article>
-            <article>
-                <img src="path_to_2d_lotto_image.jpg" alt="2D Lotto" class="game-image">
-                <h3 class="game-title">2D Lotto</h3>
-                <div class="game-details hidden">
-                    <p>Pick 2 numbers from 1 to 31 and choose your play type. Use 'S' for straight (exact order), 'R' for rumble (any order), or 'P' for pompi (same number). Match the drawn numbers and win—simple and fun!</p>
-                </div>
-            </article>
-            <article>
-                <img src="path_to_3d_lotto_image.jpg" alt="3D Lotto" class="game-image">
-                <h3 class="game-title">3D Lotto</h3>
-                <div class="game-details hidden">
-                    <p>Select 3 numbers from 0 to 9 and specify your play type. Use 'S' for
+            <!-- Your existing game articles go here -->
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results">
+        <div class="container">
+            <h2>Weekly Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Game</th>
+                        <th>Winning Numbers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-09-01</td>
+                        <td>6/45 Mega Lotto</td>
+                        <td>01, 12, 23, 34, 45, 08</td>
+                    </tr>
+                    <tr>
+                        <td>2024-09-02</td>
+                        <td>6/49 Super Lotto</td>
+                        <td>05, 11, 19, 23, 34, 44</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Winners Section -->
+    <section id="winners">
+        <div class="container">
+            <h2>Our Winners</h2>
+            <div class="gallery">
+                <img src="path_to_winner1.jpg" alt="Winner 1">
+                <img src="path_to_winner2.jpg" alt="Winner 2">
+                <img src="path_to_winner3.jpg" alt="Winner 3">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 LRS Philippines Official. All rights reserved.</p>
+    </footer>
+
+    <!-- Combined JavaScript -->
+    <script>
+        // Toggle navigation for mobile view
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('nav ul');
+
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+
+        // Toggle game details
+        const gameTitles = document.querySelectorAll('.game-title');
+
+        gameTitles.forEach(title => {
+            title.addEventListener('click', function() {
+                const details = this.nextElementSibling;
+                details.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
