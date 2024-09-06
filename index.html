@@ -1,165 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #343a40;
-}
-
-/* Header Styles */
-header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-}
-
-header .logo img {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    height: 60px;
-}
-
-/* Navigation Styles */
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #343a40;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-    flex: 1;
-}
-
-nav a:hover {
-    background-color: #007bff;
-}
-
-/* Hero Section Styles */
-.hero {
-    background: url('lotto-banner.jpg') no-repeat center center/cover;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 2em;
-    text-align: center;
-}
-
-/* Content Styles */
-.content {
-    padding: 20px;
-    text-align: center;
-}
-
-.content h2 {
-    color: #007bff;
-}
-
-.video-container {
-    margin: 20px auto;
-    max-width: 560px;
-}
-
-.video-container iframe {
-    width: 100%;
-    height: auto;
-}
-
-footer {
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    header .logo img {
-        position: static;
-        margin-bottom: 10px;
-    }
-
-    .hero {
-        font-size: 1.5em;
-    }
-}
-</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LRS Philippines Official</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Combined CSS -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0059b3;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #004080;
+            border-radius: 5px;
+        }
+
+        .nav-toggle {
+            display: none;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 20px;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #0059b3;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Games Section */
+        #games article {
+            background-color: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #games h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #0059b3;
+            cursor: pointer;
+        }
+
+        #games p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Game title clickable functionality */
+        .game-title {
+            cursor: pointer;
+            color: #0059b3;
+        }
+
+        .game-details.hidden {
+            display: none;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                display: none;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .nav-toggle {
+                display: block;
+                background-color: #0059b3;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Game Images */
+        .game-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Embed Styles */
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .embed-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
+
 <body>
+    <!-- Header Section -->
     <header>
-        <div class="logo">
-            <img src="https://i.ibb.co/jzQp77J/logo.png" alt="LRS Philippines Official Logo">
-        </div>
-        <h1>LRS Philippines Official</h1>
-        <p>Your trusted partner in lottery betting</p>
+        <h1>Welcome to LRS Philippines Official</h1>
     </header>
 
+    <!-- Navigation Menu -->
     <nav>
-        <a href="#home">Home</a>
-        <a href="#how-to-play">How to Play</a>
-        <a href="#results">Results</a>
-        <a href="#contact">Contact</a>
+        <button class="nav-toggle">☰ Menu</button>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#winners">Winners</a></li>
+            <li><a href="#live-draws">Live Draws</a></li>
+        </ul>
     </nav>
 
-    <div class="hero">
-        <h2>Welcome to LRS Philippines Official</h2>
-    </div>
-
-    <div class="content" id="home">
-        <h2>About Us</h2>
-        <p>Welcome to LRS Philippines Official, your trusted platform for lottery betting. We provide an easy and secure way to bet on the latest lotto results. Join us and be part of the winning experience.</p>
-    </div>
-
-    <div class="content" id="how-to-play">
-        <h2>How to Play</h2>
-        <p>Betting with us is simple! Choose your numbers, place your bet, and wait for the results. We offer various betting options to increase your chances of winning.</p>
-        <!-- Embedded YouTube Video -->
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8ywjjzq_sW4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to LRS Philippines Official</h2>
+            <p>Your trusted source for lotto games and fun betting experiences. We offer a wide range of exciting lottery games like 6/45, 6/49, 6/55, 6/58, 2D Lotto, and 3D Lotto. Join us for a chance to win big and experience the thrill of the lottery!</p>
         </div>
-    </div>
+    </section>
 
-    <div class="content" id="results">
-        <h2>Latest Results</h2>
-        <div id="lotto-results">
-            <img src="https://www.facebook.com/photo/?fbid=122105235890495511&set=a.122101563842495511" alt="Latest Lotto Results">
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>LRS Philippines Official is your reliable gaming and betting service provider. Our mission is to offer secure, entertaining, and rewarding gaming experiences. With a variety of lottery games, we bring excitement and big rewards to players across the country.</p>
+            <p>Transparency and fairness are our priorities. We provide clear rules and guidelines to ensure a thrilling and enjoyable gaming experience. Play responsibly and embrace the excitement of winning with LRS Philippines Official!</p>
         </div>
-    </div>
+    </section>
 
-    <div class="content" id="contact">
-        <h2>Contact Us</h2>
-        <p>Got questions? Reach out to us at <a href="mailto:support@lrsphilippines.com">support@lrsphilippines.com</a> or call us at (123) 456-7890.</p>
-        <p>You can also message us directly on Facebook:</p>
-        <a href="https://web.facebook.com/profile.php?id=100069777804120" class="fb-messenger-link" target="_blank">Message us on Facebook Messenger</a>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 LRS Philippines Official. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    <!-- Games Section -->
+    <section id="games">
+        <div class="container">
+            <h2>Our Games</h2>
+            <article>
+                <img src="path_to_6_45_image.jpg" alt="6/45 Mega Lotto" class="game-image">
+                <h3 class="game-title">6/45 Mega Lotto</h3>
+                <div class="game-details hidden">
+                    <p>Ready for a mega win? Choose 3 numbers from 1 to 45 and wait for the draw! If all three of your numbers match the six drawn numbers, you win instantly. Even if only two numbers match, you get a return bet. Exciting, right? Join now and try your luck!</p>
+                </div>
+            </article>
+            <article>
+                <img src="path_to_6_49_image.jpg" alt="6/49 Super Lotto" class="game-image">
+                <h3 class="game-title">6/49 Super Lotto</h3>
+                <div class="game-details hidden">
+                    <p>Dreaming of a super win? Pick 3 numbers from 1 to 49. Match all three with the six drawn numbers, and you're a winner! Just two matching numbers still earn you a return bet. It's your chance to hit it big—play now and see if you’re lucky!</p>
+                </div>
+            </article>
+            <article>
+                <img src="path_to_6_55_image.jpg" alt="6/55 Grand Lotto" class="game-image">
+                <h3 class="game-title">6/55 Grand Lotto</h3>
+                <div class="game-details hidden">
+                    <p>Experience the grand thrill! Select 3 numbers from 1 to 55. If all three numbers appear among the six drawn numbers, you win the grand prize! Even with just two matches, a return bet is yours. Get in the game and aim for the grand prize!</p>
+                </div>
+            </article>
+            <article>
+                <img src="path_to_6_58_image.jpg" alt="6/58 Ultra Lotto" class="game-image">
+                <h3 class="game-title">6/58 Ultra Lotto</h3>
+                <div class="game-details hidden">
+                    <p>Go ultra with your picks! Choose 3 numbers from 1 to 58. Match all three numbers with the drawn six and win the jackpot instantly. Two matches? You still get a return bet. Don’t miss out on your chance for an ultra win!</p>
+                </div>
+            </article>
+            <article>
+                <img src="path_to_2d_lotto_image.jpg" alt="2D Lotto" class="game-image">
+                <h3 class="game-title">2D Lotto</h3>
+                <div class="game-details hidden">
+                    <p>Pick 2 numbers from 1 to 31 and choose your play type. Use 'S' for straight (exact order), 'R' for rumble (any order), or 'P' for pompi (same number). Match the drawn numbers and win—simple and fun!</p>
+                </div>
+            </article>
+            <article>
+                <img src="path_to_3d_lotto_image.jpg" alt="3D Lotto" class="game-image">
+                <h3 class="game-title">3D Lotto</h3>
+                <div class="game-details hidden">
+                    <p>Select 3 numbers from 0 to 9 and specify your play type. Use 'S' for
