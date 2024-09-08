@@ -66,6 +66,14 @@
         <!-- OR search by typing date -->
         <input type="date" id="dateInput" placeholder="Enter Date">
 
+        <!-- Dropdown for draws -->
+        <select id="drawDropdown">
+            <option value="">Select a draw</option>
+            <option value="6/49 SUPER LOTTO">6/49 SUPER LOTTO</option>
+            <option value="6/55 GRAND LOTTO">6/55 GRAND LOTTO</option>
+            <!-- Add more draw options -->
+        </select>
+
         <!-- Search button -->
         <button onclick="filterResults()">Search</button>
     </div>
@@ -87,7 +95,151 @@
                     <td>6/49 SUPER LOTTO</td>
                     <td>01-02-03-04-05-06</td>
                 </tr>
-                <!-- More rows here -->
+                <tr>
+                    <td>2024-09-02</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-03</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-04</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-05</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-06</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-07</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-08</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-09</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-10</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-11</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-12</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-13</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-14</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-15</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-16</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-17</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-18</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-19</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-20</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-21</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-22</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-23</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-24</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-25</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-26</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-27</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-28</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-29</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-30</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -112,25 +264,164 @@
                 <!-- Winners Data -->
                 <tr>
                     <td>2024-09-01</td>
-                    <td>TEAM LUCKY</td>
-                    <td>DAVID</td>
-                    <td>SAMPLE WINNER 1</td>
-                    <td>01-02-03</td>
-                    <td>25</td>
-                    <td>FB</td>
-                    <td>7500</td>
                     <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
                 </tr>
-                <!-- More rows here -->
+                <tr>
+                    <td>2024-09-02</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-03</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-04</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-05</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-06</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-07</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-08</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-09</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-10</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-11</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-12</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-13</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-14</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-15</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-16</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-17</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-18</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-19</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-20</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-21</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-22</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-23</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-24</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-25</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-26</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-27</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-28</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-29</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
+                <tr>
+                    <td>2024-09-30</td>
+                    <td>6/49 SUPER LOTTO</td>
+                    <td>01-02-03-04-05-06</td>
+                </tr>
             </tbody>
         </table>
     </div>
 
     <script>
         function filterResults() {
-            // Get the date value from dropdown and input
+            // Get the date and draw values from dropdowns and input
             let selectedDate = document.getElementById('dateDropdown').value;
             let typedDate = document.getElementById('dateInput').value;
+            let selectedDraw = document.getElementById('drawDropdown').value;
 
             // Use the typed date if provided, otherwise use the dropdown value
             let filterDate = typedDate ? typedDate : selectedDate;
@@ -139,20 +430,23 @@
             let winningNumbersTable = document.getElementById('winningNumbersTable').getElementsByTagName('tbody')[0];
             let winnersTable = document.getElementById('winnersTable').getElementsByTagName('tbody')[0];
 
-            filterTableRows(winningNumbersTable, filterDate);
-            filterTableRows(winnersTable, filterDate);
+            filterTableRows(winningNumbersTable, filterDate, selectedDraw);
+            filterTableRows(winnersTable, filterDate, selectedDraw);
         }
 
-        function filterTableRows(tableBody, filterDate) {
+        function filterTableRows(tableBody, filterDate, filterDraw) {
             let rows = tableBody.getElementsByTagName('tr');
 
             for (let i = 0; i < rows.length; i++) {
                 let dateCell = rows[i].getElementsByTagName('td')[0];
-                if (dateCell) {
+                let drawCell = rows[i].getElementsByTagName('td')[1];
+                if (dateCell && drawCell) {
                     let dateValue = dateCell.textContent || dateCell.innerText;
+                    let drawValue = drawCell.textContent || drawCell.innerText;
 
-                    // Show row if date matches the filterDate, hide otherwise
-                    if (dateValue.indexOf(filterDate) > -1) {
+                    // Show row if both date and draw match the filters
+                    if ((filterDate === "" || dateValue.indexOf(filterDate) > -1) &&
+                        (filterDraw === "" || drawValue.indexOf(filterDraw) > -1)) {
                         rows[i].style.display = "";
                     } else {
                         rows[i].style.display = "none";
